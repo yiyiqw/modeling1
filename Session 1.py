@@ -15,7 +15,7 @@ class Point:
         :param y: the y-axis coordinate value
         """
         self.x = x
-        self.y = y
+        self.y = y # test
 
 
 p1 = Point(1, 2)  # create a new instance
