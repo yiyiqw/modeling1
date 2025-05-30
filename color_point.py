@@ -1,10 +1,7 @@
 # session 2 continued
 # topic: COLOR POINT
 
-# from point (file name) import Point (class name)
-# I would need to do this if I created a new file, to import/inherit the class into this new file
-# here I am using the same file, so no need
-from point import Point
+from point import Point  # point is file, Point is the class
 import random
 
 
@@ -19,6 +16,10 @@ class ColorPoint(Point):
         self.color = color
 
     def __str__(self):
+        """
+        Magic method that defines how a color point is printed
+        :return: the point as a string containing x, y and color
+        """
         return f"<{self.x}, {self.y}>({self.color})"
 
 
